@@ -23,11 +23,11 @@ const HookPage = () => {
 
     return(
         <>
-            <h1 className="font-black text-center">Api using Hook</h1>
+            <h1 className="font-black text-center bg-orange-200">Api using Hook</h1>
             <div>
                 {characters.map((item, index) => {
                     return(
-                        <div className="flex flex-wrap items-center text-center mt-10 jusitfy-center flex-col border-none" key={index}>
+                        <div className="flex flex-wrap items-center text-center p-10 jusitfy-center flex-col border-none bg-orange-200" key={index}>
                             <h2 className="font-black text-center">{item.name}</h2>
                             <Image src={item.imageUrl} alt={item.name} width={200} height={200}/>
                             <p className="font-black text-center">{item.videoGames}</p>
